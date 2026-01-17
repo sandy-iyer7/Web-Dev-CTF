@@ -1,76 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>The Locked Love Letter</title>
+<meta charset="UTF-8">
+<title>Love in the Source</title>
+
 <style>
 body {
-  background:#200012;
-  color:#ffb6c9;
-  font-family: Arial;
-  text-align:center;
-  padding-top:10vh;
+  background: linear-gradient(135deg, #1a0010, #3b0020);
+  color: #ffb3c6;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 10vh;
 }
+
 .card {
-  width:60%;
-  margin:auto;
-  background:#300018;
-  padding:30px;
-  border-radius:15px;
+  background: rgba(255,255,255,0.05);
+  width: 65%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255,0,80,0.3);
 }
-input {
-  padding:10px;
-  width:60%;
-  border-radius:10px;
-  border:none;
+
+h1 {
+  color: #ff4d7a;
+  font-size: 2.5em;
 }
-button {
-  margin-top:15px;
-  padding:10px 20px;
-  border:none;
-  border-radius:15px;
-  background:#ff4d7a;
-  color:white;
+
+p {
+  font-size: 1.2em;
 }
-#result {
-  margin-top:20px;
-  color:#7CFFB2;
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  opacity: 0.6;
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="card">
-<h1> The Locked Love Letter</h1>
+  <h1>💘 Love in the Source</h1>
 
-<p>
-Cupid locked his letter with a single word.<br>
-The poem holds the key.
-</p>
+  <p>
+    Cupid hid a love note somewhere on this page.
+  </p>
 
-<p>
-<b>L</b>ove waits in silence.<br>
-<b>O</b>nly hearts understand.<br>
-<b>V</b>ows never fade.<br>
-<b>E</b>ternity remembers.
-</p>
+  <p>
+    True romantics don’t just look — they *inspect*.
+  </p>
 
-<input id="key" placeholder="Enter the secret word">
-<br>
-<button onclick="unlock()">Open Letter</button>
+  <p>
+    Happy Valentine’s Day, seeker of secrets.
+  </p>
 
-<div id="result"></div>
+  <div class="footer">
+    Made with love.
+  </div>
 </div>
 
-<script>
-function unlock(){
-  if(document.getElementById("key").value.toLowerCase()=="love"){
-    document.getElementById("result").innerText="FLAG{love_unlocks_letters}";
-  } else {
-    document.getElementById("result").innerText="The letter stays closed.";
-  }
-}
-</script>
+<!-- 
+FLAG{valentines_love_is_hidden}
+-->
 
 </body>
 </html>
