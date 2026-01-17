@@ -37,34 +37,34 @@ p {
   opacity: 0.6;
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="card">
-  <h1> Love in the Source</h1>
+  <h1>Love in the Source</h1>
 
-  <p>
-    Cupid hid a love note somewhere on this page.
-  </p>
+  <p>Cupid hid a love note somewhere on this page.</p>
+  <p>True romantics don’t just look — they inspect.</p>
+  <p>Happy Valentine’s Day, seeker of secrets.</p>
 
-  <p>
-    True romantics don’t just look — they *inspect*.
-  </p>
-
-  <p>
-    Happy Valentine’s Day, seeker of secrets.
-  </p>
-
-  <div class="footer">
-    Made with love.
-  </div>
+  <div class="footer">Made with love.</div>
 </div>
 
-<!-- 
-FLAG{valentines_love_is_hidden}
--->
+<!-- Love sometimes comes backwards. -->
+
+<script>
+const parts = [
+  125,100,100,105,104,95,115,105,95,101,118,111,108,95,115,101,110,105,116,110,101,108,97,118,123,71,65,76,70
+];
+
+let reversed = "";
+for(let i of parts){
+  reversed += String.fromCharCode(i);
+}
+
+console.log(reversed);
+</script>
 
 </body>
 </html>
